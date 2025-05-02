@@ -153,6 +153,8 @@ while i < 256 ** 4 - 1:
         exit()
 ```
 
+## Flags
+
 With that, we leaked the private key! We can now encrypt arbitary commands.
 
 ```python
@@ -161,7 +163,7 @@ enc_text = aes.encrypt(b"ls ; cat /flag" + b"\x00\x00")
 print(enc_text.hex()) # b110678752de46dabf6f9cd87bb4abd3
 ```
 
-We can send the hash, and get the glorious flag🚩.
+We can send the hash, and get the glorious flag 🚩.
 
 ```console
 $ nc encrypted-runner.2024.ctfcompetition.com 1337
