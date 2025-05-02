@@ -10,5 +10,5 @@ Install Ruby and Jekyll in [here](https://jekyllrb.com/docs/step-by-step/01-setu
 
 ```shell
 bundle install
-bundle exec jekyll s
+bundle exec jekyll serve --livereload
 ```
