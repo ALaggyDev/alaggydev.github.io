@@ -2,9 +2,9 @@
   color-scheme: dark;
 
   /* Framework color */
-  --main-bg: rgb(27, 27, 30);
+  --main-bg: rgb(37, 39, 41);
   --mask-bg: rgb(68, 69, 70);
-  --main-border-color: rgb(44, 45, 45);
+  --main-border-color: #383940;
 
   /* Common color */
   --text-color: rgb(175, 176, 177);
@@ -17,7 +17,7 @@
   --link-color: rgb(138, 180, 248);
   --link-underline-color: rgb(82, 108, 150);
   --button-bg: #1e1e1e;
-  --btn-border-color: #2e2f31;
+  --btn-border-color: #383940;
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: #212122;
   --card-header-bg: #292929;
@@ -32,19 +32,23 @@
   );
 
   /* Sidebar */
-  --site-title-color: #717070;
-  --site-subtitle-color: #868686;
-  --sidebar-bg: #1e1e1e;
+  --site-title-color: #d8d8d8;
+  --site-subtitle-color: #c0c0c0;
+  --sidebar-bg: #2c4361;
   --sidebar-border-color: #292929;
-  --sidebar-muted-color: #868686;
+  --sidebar-muted-color: #c0c0c0;
   --sidebar-active-color: rgb(255, 255, 255, 0.95);
   --sidebar-hover-bg: #262626;
-  --sidebar-btn-bg: #232328;
-  --sidebar-btn-color: #787878;
+  --sidebar-btn-bg: #2e2e30;
+  --sidebar-btn-color: #a0a0a0;
   --avatar-border-color: rgb(206, 206, 206, 0.9);
 
+  #sidebar {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  }
+
   /* Topbar */
-  --topbar-bg: rgb(27, 27, 30, 0.64);
+  --topbar-bg: rgb(37, 39, 41, 0.64);
   --topbar-text-color: var(--text-color);
   --search-border-color: rgb(55, 55, 55);
   --search-icon-color: rgb(100, 102, 105);
@@ -141,11 +145,11 @@
   #archives li:nth-child(odd) {
     background-image: linear-gradient(
       to left,
-      rgb(26, 26, 30),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(39, 39, 45),
-      rgb(26, 26, 30)
+      rgb(37, 39, 41),
+      rgb(52, 53, 55),
+      rgb(52, 53, 55),
+      rgb(52, 53, 55),
+      rgb(37, 39, 41)
     );
   }
 
