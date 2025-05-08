@@ -3,7 +3,6 @@ title: Google CTF 2024 - Pwn Encrypted Runner Writeup
 description: Writeup of Pwn Encrypted Runner in Google CTF 2024
 date: 2024-06-24 00:00:00 +0800
 categories: [Writeup]
-tags: [writeup]
 ---
 
 _This writeup is originally posted in [here](https://github.com/ALaggyDev/CTF-Competitions/blob/main/gctf-2024/pwn_encrypted_runner/README.md) in June 2024. This was ported to this blog when the blog was created._

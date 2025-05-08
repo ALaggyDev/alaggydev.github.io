@@ -8,7 +8,7 @@ Hello! I am Jimmy, also known as Laggy. I love computers, coding & CTF :)
 
 ## LiveOverflow Minecraft Server Journey
 
-I have watched [LiveOverflow](https://www.youtube.com/@LiveOverflow)'s videos for a long time. In 2022-2023, I played on his Minecraft CTF server ([playlist](engineering)), and it's super fun for a computer nerd like me :)
+I have watched [LiveOverflow](https://www.youtube.com/@LiveOverflow)'s videos for a long time. In 2022-2023, I played on his Minecraft CTF server ([playlist](https://www.youtube.com/watch?v=Ekcseve-mOg&list=PLhixgUqwRTjwvBI-hmbZ2rpkAl4lutnJG)), and it's super fun for a computer nerd like me :)
 
 In order to even join the server, you are supposed to scan the entire Internet for all IPs that host a Minecraft server, and find his server IP. (See [here](https://youtu.be/QradKmQ27JY?list=PLhixgUqwRTjwvBI-hmbZ2rpkAl4lutnJG&t=1246) and [here](https://www.youtube.com/watch?v=hoS0PM20KJk) for more details) (I did not, of course)
 
