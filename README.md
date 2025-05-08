@@ -8,6 +8,8 @@ This blog uses the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) th
 
 Install Ruby and Jekyll in [here](https://jekyllrb.com/docs/step-by-step/01-setup/).
 
+Folders of interest: `/_posts`, `/_tabs`.
+
 ```shell
 bundle install
 bundle exec jekyll serve --livereload

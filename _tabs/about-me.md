@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 2
+order: 3
 ---
 
 Hello! I am Jimmy, also known as Laggy. I love computers, coding & CTF :) 
