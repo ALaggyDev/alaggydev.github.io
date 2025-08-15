@@ -21,16 +21,16 @@ He also made lots of _challenges_, where you have to read the Minecraft source c
 <details markdown="1">
 <summary>Images</summary>
 
-![Minecraft 1](/assets/img/mc-1.png){: w="700" h="400" }
-![Minecraft 2](/assets/img/mc-2.png){: w="700" h="400" }
-![Minecraft 3](/assets/img/mc-3.png){: w="700" h="400" }
-![Minecraft 4](/assets/img/mc-4.png){: w="700" h="400" }
-![Minecraft 5](/assets/img/mc-5.png){: w="700" h="400" }
-![Minecraft 1](/assets/img/mc-6.png){: w="700" h="400" }
-![Minecraft 2](/assets/img/mc-7.png){: w="700" h="400" }
-![Minecraft 3](/assets/img/mc-8.png){: w="700" h="400" }
-![Minecraft 4](/assets/img/mc-9.png){: w="700" h="400" }
-![Minecraft 5](/assets/img/mc-10.png){: w="700" h="400" }
+![Minecraft 1](/assets/img/main_page/mc-1.png){: w="700" h="400" }
+![Minecraft 2](/assets/img/main_page/mc-2.png){: w="700" h="400" }
+![Minecraft 3](/assets/img/main_page/mc-3.png){: w="700" h="400" }
+![Minecraft 4](/assets/img/main_page/mc-4.png){: w="700" h="400" }
+![Minecraft 5](/assets/img/main_page/mc-5.png){: w="700" h="400" }
+![Minecraft 1](/assets/img/main_page/mc-6.png){: w="700" h="400" }
+![Minecraft 2](/assets/img/main_page/mc-7.png){: w="700" h="400" }
+![Minecraft 3](/assets/img/main_page/mc-8.png){: w="700" h="400" }
+![Minecraft 4](/assets/img/main_page/mc-9.png){: w="700" h="400" }
+![Minecraft 5](/assets/img/main_page/mc-10.png){: w="700" h="400" }
 
 </details>
 
@@ -42,4 +42,4 @@ I got into CTF because of LiveOverflow's videos.
 
 A long time ago, I played wargames in [OverTheWire](https://overthewire.org/wargames/). In 2024, I started playing [TryHackMe](https://tryhackme.com/) and [HackTheBox](https://www.hackthebox.com/). I don't know why, but I really enjoyed learning about cryptography, reverse engineering, binary exploitation, web exploitation etc.
 
-![Hacking in Kali Linux](/assets/img/kali-linux.png){: w="700" h="400" }
+![Hacking in Kali Linux](/assets/img/main_page/kali-linux.png){: w="700" h="400" }
