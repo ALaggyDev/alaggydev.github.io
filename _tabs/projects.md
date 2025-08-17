@@ -14,3 +14,4 @@ Most of my projects are not good enough to be worthy of displaying. Nevertheless
 Here are some "projects" that may be interesting:
 - [Advent of Code 2024](https://github.com/ALaggyDev/advent-of-code-2024) _(full 25 days with leaderboard!)_
 - [My CTF Repository](https://github.com/ALaggyDev/CTF-Competitions)
+- [My CTFtime Profile](https://ctftime.org/user/198027)
