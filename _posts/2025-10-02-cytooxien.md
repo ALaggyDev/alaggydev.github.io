@@ -291,3 +291,7 @@ Thanks for reading!
 Our Github profiles:
 - [Laggy](https://github.com/ALaggyDev)
 - [NikOverflow](https://github.com/NikOverflow)
+
+Or find us on Discord:
+- Laggy: `i_am_sheep`
+- NikOverflow: `nikoverflow`
