@@ -189,7 +189,7 @@ _7zip can't open this zip file_
 ![Linux can't unzip](/assets/img/cytooxien/unzip_linux.png){: w="800" }
 _the `file` command also thinks there's nothing in this zip file_
 
-Well, the zip file seems to be *intentionally broken* (persumably by [PackSquash](https://github.com/ComunidadAylas/PackSquash)?). This may stop some script kiddies or naive coders, but I am no ordinary script kiddies.
+Well, the zip file seems to be *intentionally broken* (persumably by [PackSquash](https://github.com/ComunidadAylas/PackSquash)?). This may stop some script kiddies or clueless hackers, but I am no ordinary script kiddies.
 
 By finding the Minecraft code that unzips resource packs, I quickly wrote some code to unzip the resource pack the same way Minecraft does.
 
@@ -271,7 +271,7 @@ _P.S. I have skipped over some minor things the server is also doing (e.g. detec
 
 If you are doing some *shady stuff* and don't want to be tracked by this exploit, here are some steps you can take:
 
-- **Use separate Minecraft instances**: For different accounts, use seperate instances to prevent cache sharing. (e.g. PolyMC)
+- **Use separate Minecraft instances**: For different accounts, use seperate instances to prevent cache sharing. (e.g. Prism Launcher)
 - **Clear your resource pack cache**: Regularly delete the contents of `.minecraft/downloads` to remove cached packs.
 
 ### For LiquidBounce users
