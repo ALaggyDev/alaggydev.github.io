@@ -276,7 +276,10 @@ If you are doing some *shady stuff* and don't want to be tracked by this exploit
 
 ### For LiquidBounce users
 
-Update your client, maybe? *Or use a different client lol*
+**Update: LiquidBounce has fixed both of these exploits now (see [here](https://github.com/CCBlueX/LiquidBounce/issues/7007)).
+Meteor client also implemented a fix for the device fingerprinting exploit as well (see [here](https://github.com/MeteorDevelopment/meteor-client/commit/e241e7d555cffe7687a045758ae6b8a9dc05a6e8)).**
+
+**Players using those clients should update to the latest version if they do not wish to be tracked.**
 
 ### Conclusion
 
