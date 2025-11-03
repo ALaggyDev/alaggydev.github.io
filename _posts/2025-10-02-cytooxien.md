@@ -277,7 +277,7 @@ If you are doing some *shady stuff* and don't want to be tracked by this exploit
 ### For LiquidBounce users
 
 **Update: LiquidBounce has fixed both of these exploits now (see [here](https://github.com/CCBlueX/LiquidBounce/issues/7007)).
-Meteor client also implemented a fix for the device fingerprinting exploit as well (see [here](https://github.com/MeteorDevelopment/meteor-client/commit/e241e7d555cffe7687a045758ae6b8a9dc05a6e8)).**
+Meteor client and Wurst client also implemented a fix for the device fingerprinting exploit as well (see [here](https://github.com/MeteorDevelopment/meteor-client/commit/e241e7d555cffe7687a045758ae6b8a9dc05a6e8) and [here](https://github.com/Wurst-Imperium/Wurst7/issues/1226)).**
 
 **Players using those clients should update to the latest version if they do not wish to be tracked.**
 
@@ -288,6 +288,8 @@ This exploit has massive implications to both players and server owners. It brin
 We also submitted a private bug report about this technique to the Mojang bug tracker, but so far we received no responses yet.
 
 If you want to see a Proof of Concept of this technique, check out our [TrackPack PoC plugin](https://github.com/ALaggyDev/TrackPack).
+
+**Update: NikOverflow created a fabric mod that prevents known client-side exploits such as the [sign translation vulnerability](https://wurst.wiki/sign_translation_vulnerability) and of course, our exploits with resource packs. Go take a look if you like! Links: ([Modrinth](https://modrinth.com/mod/exploitpreventer)) ([Github](https://github.com/NikOverflow/ExploitPreventer))**
 
 Thanks for reading!
 
