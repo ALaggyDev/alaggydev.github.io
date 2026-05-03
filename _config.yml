@@ -22,6 +22,10 @@ analytics:
     id: G-F7F18F41ED
 google_analytics: G-F7F18F41ED
 
+# Site Verification Settings
+webmaster_verifications:
+  google: xru9EFczozR4VYCba2k39a7A71pwQSVP4D70JN9oKE0
+
 # jekyll-paginate
 paginate: 10
 paginate_path: "/blog/page:num/"
