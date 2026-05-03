@@ -1,10 +1,9 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 3
+title: About
+permalink: /about/
 ---
 
-Hello! I am Jimmy, also known as Laggy. I love computers, coding & CTF :) 
+Hello! I am Jimmy, also known as Laggy. I love computers, coding & CTF :)
 
 ## LiveOverflow Minecraft Server Journey
 

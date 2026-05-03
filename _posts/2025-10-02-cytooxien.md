@@ -2,7 +2,7 @@
 title: How Minecraft servers can track you across accounts and IPs using resource packs
 description: How we uncovered a device fingerprinting exploit on cytooxien.net and more
 date: 2025-10-03 20:00:00 +0800
-categories: []
+tags: [Minecraft, Security]
 ---
 
 ## Introduction
