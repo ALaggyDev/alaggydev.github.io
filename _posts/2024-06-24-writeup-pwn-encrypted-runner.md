@@ -9,7 +9,7 @@ _This writeup is originally posted in [here](https://github.com/ALaggyDev/CTF-Co
 
 _(11 months later) **Note**: This was my first pwn challenge ever done in an actual CTF competition. Now looking back, my solution was pretty bad. :(_
 
-# Challange
+# Challenge
 
 [Challenge in here](https://github.com/google/google-ctf/tree/main/2024/quals/pwn-encrypted-runner)
 

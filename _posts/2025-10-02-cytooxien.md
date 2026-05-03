@@ -1,6 +1,6 @@
 ---
 title: How Minecraft servers can track you across accounts and IPs using resource packs
-description: How we uncovered a device fingerprinting exploit on cytooxien.net and more
+description: How we uncovered a device fingerprinting exploit on cytooxien.net
 date: 2025-10-03 20:00:00 +0800
 tags: [Minecraft, Security]
 ---
@@ -9,7 +9,7 @@ tags: [Minecraft, Security]
 
 A while ago, [NikOverflow](https://github.com/NikOverflow) was playing on a popular German Minecraft server named Cytooxien, and discovered some strange error messages in the console.
 
-![A bunch of resource pack loading errors](/assets/img/cytooxien/pack_error.png){: w="600"}
+![A bunch of resource pack loading errors](/assets/img/cytooxien/pack_error.png){: width="600" }
 
 Strange, huh? So we investigated further. Never would we thought that we were about to go down a rabbit hole of weird Minecraft exploits, tricks and shenanigans. We were about to discover exploits that were hidden from general Minecraft community for **over one and a half years**! Using nothing more than server resource packs, we discovered that:
 1. servers can quietly track players across different accounts & IPs
@@ -57,8 +57,7 @@ _the `pack.mcmeta` file inside the zip file from `https://resource.cytooxien.de/
 
 With a bit of thinking, I realized what was going on: the server was performing **device fingerprinting** on its players using the client's resource pack cache!
 
-> [Device fingerprinting](https://en.wikipedia.org/wiki/Device_fingerprint) is a technique for uniquely identifying a device by collecting and analyzing various hardware and software characteristics. They are commonly used in websites to track users across different websites or IPs. Common techniques on the web involves cookies, user agents, screen resolution, IP addresses etc.
-{: .prompt-info }
+> **Note:** [Device fingerprinting](https://en.wikipedia.org/wiki/Device_fingerprint) is a technique for uniquely identifying a device by collecting and analyzing various hardware and software characteristics. They are commonly used in websites to track users across different websites or IPs. Common techniques on the web involves cookies, user agents, screen resolution, IP addresses etc.
 
 Essentially, the server is probing to see which resource packs are already cached locally and uses that to identify the device (or instance) the player is using.
 
@@ -180,13 +179,13 @@ We had a suspicion of how they did it, but to verify it I needed to look inside 
 
 I tried to open Cytooxien's resource pack, but hmm:
 
-![Windows Explorer can't unzip](/assets/img/cytooxien/unzip_explorer.png){: w="800" }
+![Windows Explorer can't unzip](/assets/img/cytooxien/unzip_explorer.png){: width="800" }
 _Windows Explorer thinks there's nothing in this zip file_
 
-![7zip can't unzip](/assets/img/cytooxien/unzip_7zip.png){: w="400" }
+![7zip can't unzip](/assets/img/cytooxien/unzip_7zip.png){: width="400" }
 _7zip can't open this zip file_
 
-![Linux can't unzip](/assets/img/cytooxien/unzip_linux.png){: w="800" }
+![Linux can't unzip](/assets/img/cytooxien/unzip_linux.png){: width="800" }
 _the `file` command also thinks there's nothing in this zip file_
 
 Well, the zip file seems to be *intentionally broken* (persumably by [PackSquash](https://github.com/ComunidadAylas/PackSquash)?). This may stop some script kiddies or clueless hackers, but I am no ordinary script kiddies.
@@ -213,8 +212,7 @@ Technically the toast message is still there, but *you just can't see it*.
 
 And with that, the main part of the exploit is done now! There's some extra nuanced things that the server is doing, but it is not that relevant right now.
 
-> Furthermore, by checking the [Exif metadata](https://en.wikipedia.org/wiki/Exif) of `toast/system.png`, we knew that the exploit was created on `2024:01:24 21:54:47+01:00` (on GIMP, Linux). This exploit stayed under the radar for over 1.5 years!
-{: .prompt-tip }
+> **Interesting detail:** By checking the [Exif metadata](https://en.wikipedia.org/wiki/Exif) of `toast/system.png`, we knew that the exploit was created on `2024:01:24 21:54:47+01:00` (on GIMP, Linux). This exploit stayed under the radar for over 1.5 years!
 
 ## Reaching out to the creator
 
@@ -253,7 +251,6 @@ There's still one thing unexplained though - **the resource pack request with th
 > <br>
 > <br>
 > The answer:
-{: .prompt-info }
 
 It took me an embarrassing amount of time to figure out the true purpose behind this. Turns out, if you search `"15000:/default"` on Google, a hacked client named [**LiquidBounce**](https://liquidbounce.net/) pops up.
 

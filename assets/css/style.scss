@@ -1,0 +1,27 @@
+---
+# Only the main Sass file needs front matter.
+---
+
+@import "dash";
+
+.post-excerpt {
+  @include themed() {
+    color: t("foreground-color");
+  }
+}
+
+.post {
+  ul:not(.related-posts) {
+    padding-left: 1.5em;
+  }
+
+  ul:not(.related-posts) > li {
+    list-style: disc;
+    margin-left: 0;
+    padding-left: 0.1em;
+  }
+
+  ul:not(.related-posts) > li::before {
+    content: none;
+  }
+}
