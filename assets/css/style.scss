@@ -2,11 +2,11 @@
 # Only the main Sass file needs front matter.
 ---
 
-@import "dash";
+@import 'dash';
 
 .post-excerpt {
   @include themed() {
-    color: t("foreground-color");
+    color: t('foreground-color');
   }
 }
 
@@ -19,9 +19,113 @@
     list-style: disc;
     margin-left: 0;
     padding-left: 0.1em;
+
+    @include themed() {
+      color: t('foreground-color');
+    }
   }
 
   ul:not(.related-posts) > li::before {
     content: none;
   }
+
+  .image-with-caption {
+    margin: 1.2em 0 1.6em;
+    text-align: center;
+  }
+
+  .image-with-caption img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .image-with-caption figcaption {
+    margin-top: 0.45em;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .theme--dark & .image-with-caption figcaption {
+    color: #9facb8;
+  }
+
+  .theme--light & .image-with-caption figcaption {
+    color: #59636f;
+  }
+}
+
+.page-content > .wrapper > blockquote {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+  font-style: italic;
+}
+
+.theme--dark .page-content > .wrapper > blockquote {
+  color: #fdd98d;
+}
+
+.theme--light .page-content > .wrapper > blockquote {
+  color: #d69503;
+}
+
+.page-content > .wrapper > blockquote > p {
+  display: inline-block;
+  padding-left: 3em;
+}
+
+.page-content > .wrapper > blockquote::before {
+  content: '\f10e';
+  float: left;
+  margin-right: -2em;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.foldable {
+  margin: 1.4em 0 1.8em;
+  padding: 0.9em 1em;
+  border-left: 0.18em solid $color-blue;
+  border-radius: 0.3em;
+}
+
+.theme--dark .foldable {
+  background: #1e2227;
+}
+
+.theme--light .foldable {
+  background: #f2f6f9;
+}
+
+.foldable summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style-position: outside;
+  margin-left: 0.35em;
+}
+
+.theme--dark .foldable summary {
+  color: #dae4ed;
+}
+
+.theme--light .foldable summary {
+  color: #1e2227;
+}
+
+.foldable[open] summary {
+  margin-bottom: 0.9em;
+}
+
+.foldable-content > :first-child {
+  margin-top: 0;
+}
+
+.foldable-content > :last-child {
+  margin-bottom: 0;
 }

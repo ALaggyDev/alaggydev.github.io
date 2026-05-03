@@ -1,0 +1,8 @@
+{% assign foldable_open = include.open | default: false %}
+
+<details class="foldable "{% if foldable_open %} open{% endif %}>
+  <summary>{{ include.title }}</summary>
+  <div class="foldable-content">
+    {{ include.content | markdownify }}
+  </div>
+</details>

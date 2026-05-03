@@ -17,28 +17,26 @@ I also managed to find the coordinates of his new base within a day ([here](http
 
 He also made lots of _challenges_, where you have to read the Minecraft source code and write a exploit in your Minecraft client. I solved all of those.
 
-<details markdown="1">
-<summary>Images</summary>
-
-![Minecraft 1](/assets/img/main_page/mc-1.png){: width="700" height="400" }
-![Minecraft 2](/assets/img/main_page/mc-2.png){: width="700" height="400" }
-![Minecraft 3](/assets/img/main_page/mc-3.png){: width="700" height="400" }
-![Minecraft 4](/assets/img/main_page/mc-4.png){: width="700" height="400" }
-![Minecraft 5](/assets/img/main_page/mc-5.png){: width="700" height="400" }
-![Minecraft 1](/assets/img/main_page/mc-6.png){: width="700" height="400" }
-![Minecraft 2](/assets/img/main_page/mc-7.png){: width="700" height="400" }
-![Minecraft 3](/assets/img/main_page/mc-8.png){: width="700" height="400" }
-![Minecraft 4](/assets/img/main_page/mc-9.png){: width="700" height="400" }
-![Minecraft 5](/assets/img/main_page/mc-10.png){: width="700" height="400" }
-
-</details>
+{% capture minecraft_screenshots %}
+![Minecraft screenshot 1](/assets/img/main_page/mc-1.png)
+![Minecraft screenshot 2](/assets/img/main_page/mc-2.png)
+![Minecraft screenshot 3](/assets/img/main_page/mc-3.png)
+![Minecraft screenshot 4](/assets/img/main_page/mc-4.png)
+![Minecraft screenshot 5](/assets/img/main_page/mc-5.png)
+![Minecraft screenshot 6](/assets/img/main_page/mc-6.png)
+![Minecraft screenshot 7](/assets/img/main_page/mc-7.png)
+![Minecraft screenshot 8](/assets/img/main_page/mc-8.png)
+![Minecraft screenshot 9](/assets/img/main_page/mc-9.png)
+![Minecraft screenshot 10](/assets/img/main_page/mc-10.png)
+{% endcapture %}
+{% include foldable.html title="Minecraft screenshots" content=minecraft_screenshots %}
 
 ## My CTF Journey
 
-> CTF stands for __Capture The Flag__. It is a type of cybersecurity competition in which participants attempt to find or gather "flags", which are secretly hidden in purposefully vulnerable programs or websites. It is used to test and develop computer security skills, such as __cryptography__, __reverse engineering__ and __binary exploitation__.
+> CTF stands for **Capture The Flag**. It is a type of cybersecurity competition in which participants attempt to find or gather "flags", which are secretly hidden in purposefully vulnerable programs or websites. It is used to test and develop computer security skills, such as **cryptography**, **reverse engineering** and **binary exploitation**.
 
 I got into CTF because of LiveOverflow's videos.
 
 A long time ago, I played wargames in [OverTheWire](https://overthewire.org/wargames/). In 2024, I started playing [TryHackMe](https://tryhackme.com/) and [HackTheBox](https://www.hackthebox.com/). I don't know why, but I really enjoyed learning about cryptography, reverse engineering, binary exploitation, web exploitation etc.
 
-![Hacking in Kali Linux](/assets/img/main_page/kali-linux.png){: width="700" height="400" }
+![Hacking in Kali Linux](/assets/img/main_page/kali-linux.png)

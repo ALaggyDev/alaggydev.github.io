@@ -57,7 +57,7 @@ _the `pack.mcmeta` file inside the zip file from `https://resource.cytooxien.de/
 
 With a bit of thinking, I realized what was going on: the server was performing **device fingerprinting** on its players using the client's resource pack cache!
 
-> **Note:** [Device fingerprinting](https://en.wikipedia.org/wiki/Device_fingerprint) is a technique for uniquely identifying a device by collecting and analyzing various hardware and software characteristics. They are commonly used in websites to track users across different websites or IPs. Common techniques on the web involves cookies, user agents, screen resolution, IP addresses etc.
+> [Device fingerprinting](https://en.wikipedia.org/wiki/Device_fingerprint) is a technique for uniquely identifying a device by collecting and analyzing various hardware and software characteristics. They are commonly used in websites to track users across different websites or IPs. Common techniques on the web involves cookies, user agents, screen resolution, IP addresses etc.
 
 Essentially, the server is probing to see which resource packs are already cached locally and uses that to identify the device (or instance) the player is using.
 
@@ -66,9 +66,11 @@ The packs from `https://resource.cytooxien.de/generate/1` to `https://resource.c
 The flow of the exploit looks like this:
 1. First, the server sends a series of bad resource pack requests with hash and uuid (packs 1–28) using the failing URL `http://127.0.0.1:0`.
 
-2. If the server detects none of the packs are cached on the client, then:
-- generate a "fingerprint" for the user (consisting of 6 numbers from 1 to 28 typically), and sends real resource pack requests with valid urls. The client will then downloads and caches them.
-3. or else, use the information of which resource packs are cached to deduce the fingerprint.
+2. If none of the packs are cached:
+- the server will generate a "fingerprint" for the user (consisting of 6 numbers from 1 to 28 typically), and sends real resource pack requests with valid urls. The client will then downloads and caches them.
+
+3. If some of the packs are cached:
+- the server can use the information of which resource packs are cached to deduce the fingerprint.
 
 By doing this, every player are attached an unique identifiable fingerprint. Because the resource pack cache is shared across different accounts, the exploit can be used to track players across different accounts or IPs. Truly mind-blowing.
 
@@ -179,16 +181,22 @@ We had a suspicion of how they did it, but to verify it I needed to look inside 
 
 I tried to open Cytooxien's resource pack, but hmm:
 
-![Windows Explorer can't unzip](/assets/img/cytooxien/unzip_explorer.png){: width="800" }
-_Windows Explorer thinks there's nothing in this zip file_
+<figure class="image-with-caption">
+  <img src="/assets/img/cytooxien/unzip_explorer.png" alt="Windows Explorer can't unzip" width="800">
+  <figcaption>Windows Explorer thinks there's nothing in this zip file</figcaption>
+</figure>
 
-![7zip can't unzip](/assets/img/cytooxien/unzip_7zip.png){: width="400" }
-_7zip can't open this zip file_
+<figure class="image-with-caption">
+  <img src="/assets/img/cytooxien/unzip_7zip.png" alt="7zip can't unzip" width="400">
+  <figcaption>7zip can't open this zip file</figcaption>
+</figure>
 
-![Linux can't unzip](/assets/img/cytooxien/unzip_linux.png){: width="800" }
-_the `file` command also thinks there's nothing in this zip file_
+<figure class="image-with-caption">
+  <img src="/assets/img/cytooxien/unzip_linux.png" alt="Linux can't unzip" width="800">
+  <figcaption>the <code>file</code> command also thinks there's nothing in this zip file</figcaption>
+</figure>
 
-Well, the zip file seems to be *intentionally broken* (persumably by [PackSquash](https://github.com/ComunidadAylas/PackSquash)?). This may stop some script kiddies or clueless hackers, but I am no ordinary script kiddies.
+Well, the zip file seems to be *intentionally broken* (persumably by [PackSquash](https://github.com/ComunidadAylas/PackSquash)?). This may stop some script kiddies or clueless hackers, but I am different.
 
 By finding the Minecraft code that unzips resource packs, I quickly wrote some code to unzip the resource pack the same way Minecraft does.
 
@@ -223,34 +231,6 @@ We did know some technical details about this exploit through him, but unfortuna
 ## There's more???
 
 There's still one thing unexplained though - **the resource pack request with the strange url `http://127.0.0.1:15000/default/img/steve.png`**. When asked, the creator refused to answer about this. Clearly, there's more we don't know yet, and we had to figure it out.
-
-> Before you read the next part though, try figuring out the true purpose of this url yourself. It's a fun opportunity to test your research skills.
-> <br>
-> Scroll down when you're ready.
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> <br>
-> The answer:
 
 It took me an embarrassing amount of time to figure out the true purpose behind this. Turns out, if you search `"15000:/default"` on Google, a hacked client named [**LiquidBounce**](https://liquidbounce.net/) pops up.
 
