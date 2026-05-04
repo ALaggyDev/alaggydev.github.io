@@ -9,7 +9,7 @@ tags: [Minecraft, Security]
 
 A while ago, [NikOverflow](https://github.com/NikOverflow) was playing on a popular German Minecraft server named Cytooxien, and discovered some strange error messages in the console.
 
-![A bunch of resource pack loading errors](/assets/img/cytooxien/pack_error.png){: width="600" }
+![A bunch of resource pack loading errors](/assets/img/cytooxien/pack_error.png)
 
 Strange, huh? So we investigated further. Never would we thought that we were about to go down a rabbit hole of weird Minecraft exploits, tricks and shenanigans. We were about to discover exploits that were hidden from general Minecraft community for **over one and a half years**! Using nothing more than server resource packs, we discovered that:
 1. servers can quietly track players across different accounts & IPs
@@ -182,17 +182,17 @@ We had a suspicion of how they did it, but to verify it I needed to look inside 
 I tried to open Cytooxien's resource pack, but hmm:
 
 <figure class="image-with-caption">
-  <img src="/assets/img/cytooxien/unzip_explorer.png" alt="Windows Explorer can't unzip" width="800">
+  <img src="/assets/img/cytooxien/unzip_explorer.png" alt="Windows Explorer can't unzip">
   <figcaption>Windows Explorer thinks there's nothing in this zip file</figcaption>
 </figure>
 
 <figure class="image-with-caption">
-  <img src="/assets/img/cytooxien/unzip_7zip.png" alt="7zip can't unzip" width="400">
+  <img src="/assets/img/cytooxien/unzip_7zip.png" alt="7zip can't unzip">
   <figcaption>7zip can't open this zip file</figcaption>
 </figure>
 
 <figure class="image-with-caption">
-  <img src="/assets/img/cytooxien/unzip_linux.png" alt="Linux can't unzip" width="800">
+  <img src="/assets/img/cytooxien/unzip_linux.png" alt="Linux can't unzip">
   <figcaption>the <code>file</code> command also thinks there's nothing in this zip file</figcaption>
 </figure>
 

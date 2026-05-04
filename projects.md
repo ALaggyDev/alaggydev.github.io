@@ -9,6 +9,7 @@ Most of my projects are not good enough to be worthy of displaying. Nevertheless
 - A [automatic puzzle solver](https://github.com/ALaggyDev/logic-grid-solver) for the game _Islands of Insight_. It eventually got merged into [Logic Pad](https://github.com/hlysine/logic-pad).
 - [ncr_rs](https://github.com/ALaggyDev/ncr-rs), a Rust crate to implement Minecraft's No Chat Reports (NCR) chat encryption.
 - [Prism lang](https://github.com/ALaggyDev/prism-lang), a small toy programming language written in Rust. (still incomplete)
+- [Elytra OS](https://github.com/ALaggyDev/Elytra-OS), a incomplete OS kernel written in Rust.
 
 Here are some "projects" that may be interesting:
 
