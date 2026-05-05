@@ -14,3 +14,56 @@
     </span>
   </div>
 </div>
+
+<script>
+  (function () {
+    "use strict";
+
+    if (!("serviceWorker" in navigator)) {
+      return;
+    }
+
+    var cleanupVersion = "laggy-blog-chirpy-cleanup-2026-05-05";
+    var storageKey = "laggyBlogServiceWorkerCleanup";
+    var swUrl = "{{ '/sw.min.js' | relative_url }}";
+
+    try {
+      if (window.localStorage.getItem(storageKey) === cleanupVersion) {
+        return;
+      }
+    } catch (error) {
+      // Continue without localStorage; the worker unregisters itself after cleanup.
+    }
+
+    navigator.serviceWorker.addEventListener("message", function (event) {
+      if (!event.data || event.data.type !== "SW_CLEANUP_DONE") {
+        return;
+      }
+
+      try {
+        window.localStorage.setItem(storageKey, event.data.version || cleanupVersion);
+      } catch (error) {
+        // Ignore private-mode or storage-policy failures.
+      }
+
+      window.location.reload();
+    });
+
+    window.addEventListener("load", function () {
+      navigator.serviceWorker
+        .register(swUrl, { updateViaCache: "none" })
+        .then(function (registration) {
+          try {
+            window.localStorage.setItem(storageKey, cleanupVersion);
+          } catch (error) {
+            // Ignore private-mode or storage-policy failures.
+          }
+
+          return registration.update();
+        })
+        .catch(function (error) {
+          console.warn("Service worker cleanup failed:", error);
+        });
+    });
+  })();
+</script>
