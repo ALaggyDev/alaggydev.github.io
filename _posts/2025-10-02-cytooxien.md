@@ -180,20 +180,11 @@ We had a suspicion of how they did it, but to verify it I needed to look inside 
 
 I tried to open Cytooxien's resource pack, but hmm:
 
-<figure class="image-with-caption">
-  <img src="/assets/img/cytooxien/unzip_explorer.png" alt="Windows Explorer can't unzip">
-  <figcaption>Windows Explorer thinks there's nothing in this zip file</figcaption>
-</figure>
+{% include image-caption.html src="/assets/img/cytooxien/unzip_explorer.png" alt="Windows Explorer can't unzip" caption="Windows Explorer thinks there's nothing in this zip file" %}
 
-<figure class="image-with-caption">
-  <img src="/assets/img/cytooxien/unzip_7zip.png" alt="7zip can't unzip">
-  <figcaption>7zip can't open this zip file</figcaption>
-</figure>
+{% include image-caption.html src="/assets/img/cytooxien/unzip_7zip.png" alt="7zip can't unzip" caption="7zip can't open this zip file" %}
 
-<figure class="image-with-caption">
-  <img src="/assets/img/cytooxien/unzip_linux.png" alt="Linux can't unzip">
-  <figcaption>the <code>file</code> command also thinks there's nothing in this zip file</figcaption>
-</figure>
+{% include image-caption.html src="/assets/img/cytooxien/unzip_linux.png" alt="Linux can't unzip" caption="the `file` command also thinks there's nothing in this zip file" %}
 
 Well, the zip file seems to be *intentionally broken* (persumably by [PackSquash](https://github.com/ComunidadAylas/PackSquash)?). This may stop some script kiddies or clueless hackers, but I am different.
 
