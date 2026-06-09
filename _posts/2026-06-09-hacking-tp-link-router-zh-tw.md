@@ -159,7 +159,7 @@ curl -X POST -d '{"ippool":{"table":"ippool","para":{"name":"; reboot &","start_
 uid=0(root) gid=0(root)
 ```
 
-這個漏洞能玩的東西不少。比如可以用它起一個反向 shell，讓路由器連回我們的機器，從而拿到完整控制權。具體 payload 我放在了[附錄](#appendix-reverse-shell-payload)裡。
+這個漏洞能玩的東西不少。比如可以用它起一個反向 shell，讓路由器連回我們的機器，從而拿到完整控制權。具體 payload 我放在了[附錄](#附錄reverse-shell-payload)裡。
 
 不過，這個漏洞必須由能存取路由器管理後台的使用者觸發，所以還沒有那麼嚴重。下面兩個漏洞就更麻煩了 :)
 
